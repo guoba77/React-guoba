@@ -4,7 +4,11 @@ class test3 extends Component {
   state = {
     val: '你好！受控',
   }
-  setInputVal = (e) => {}
+  setInputVal = (e) => {
+    this.setState({
+      val: e.target.value,
+    })
+  }
   render() {
     return (
       <div>
